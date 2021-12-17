@@ -13,21 +13,21 @@ import PrivateRoute from './PrivateRoute';
 const App = () => {
   return (
     <AppContainer>
-      <BloomHeader/>
-      <Header/>
+      <BloomHeader />
+      <Header />
       <RouteContainer>
         <Route exact path="/">
-          <Login/>
-          </Route> 
+          <Login />
+        </Route>
 
         <Route exact path="/login">
-          <Login/>
-        </Route> 
+          <Login />
+        </Route>
 
         <PrivateRoute path='/view' component={View} />
 
-        <PrivateRoute path='/logout' component={Logout} />   
-         
+        <PrivateRoute path='/logout' component={Logout} />
+
       </RouteContainer>
     </AppContainer>
   )
